@@ -1,9 +1,6 @@
 @media screen and (max-width: 1440px) {
 
     .serv-price-box {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 500;
         font-size: 20px;
         line-height: 65px;
     }
@@ -18,9 +15,6 @@
     }
 
     .prod-discr {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 32px;
     }
@@ -33,9 +27,6 @@
     }
 
     .certific-bonus-box {
-        font-family: 'Georgia';
-        font-style: normal;
-        font-weight: 700;
         font-size: 20px;
         line-height: 45px;
     }
@@ -45,11 +36,7 @@
     }
 
     .feedback-client {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
-        color: rgba(82, 92, 96, 1);
     }
 
     .fb-slideContainer {
@@ -62,9 +49,6 @@
 @media screen and (max-width: 1280px) {
 
     .serv-price-box {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 500;
         font-size: 18px;
         line-height: 65px;
     }
@@ -73,29 +57,140 @@
 
 @media screen and (max-width: 1024px) {
 
-    
-}
+    .checkbox,
+    .toggle {
+        visibility: visible;
+    }
 
+    .checkbox {
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .navigation .toggle {
+        position: relative;
+        left: -20px;
+        cursor: pointer;
+    }
+
+    .toggle > span,
+    .toggle > span::after,
+    .toggle > span::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: rgb(22, 21, 21);
+        position: absolute;
+    }
+
+    .toggle > span::before {
+        top: -7px;
+    }
+
+    .toggle > span::after {
+        top: 7px;
+    }
+
+    .navigation a {
+        font-size: 23px;
+        padding: 10px;
+    }
+
+    .navigation .menu-box li {  
+        width: 100%;
+        border-bottom: 1.5px solid rgba(51, 91, 107, 1);
+        text-align: center;
+    }
+
+    .navigation ul {
+        border: 1px solid rgba(51, 91, 107, 1);
+        gap: 3px;
+    }
+
+    .menu-box {
+        display: inline-block;
+        flex-direction: column;
+        position: fixed;
+        top: 15%;
+        left: 65%;
+        background-color: rgb(243, 243, 237, 0.9);
+        width: 25%;
+        visibility: hidden;
+        border-radius: 30px;
+    }
+
+    .checkbox:checked ~ .toggle > span {
+        transform: rotate(45deg);
+    }
+
+    .checkbox:checked ~ .toggle > span::before {
+        top: 0;
+    }
+
+    .checkbox:checked ~ .toggle > span::after {
+        transform: rotate(90deg);
+        top: 0;
+    }
+
+    .checkbox:checked ~ .menu-box {
+        visibility: visible;
+    }
+
+    .slideContainer {
+        width: 100%;
+        height: 400px;
+    }
+
+    .sale-offers {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .serv-price-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .service-price {
+        width: 550px;
+        height: 250px;
+    }
+
+    .certific-bonus-box {
+        flex-wrap: wrap;
+    }
+
+    .cert-card-box {
+        margin-bottom: 35px;
+    }
+
+    .feedback-client {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(21 7 1);
+    }
+
+    .about-us-box {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .hours h4, .contacts h4 {
+        padding-bottom: 35px;
+    }
+}
 
 
 @media screen and (max-width: 950px) {
 
-   
+    .menu-box {
+        left: 70%;
+    }
 }
-
-
-
-@media screen and (max-width: 800px) {
-
-    
-}
-
-
-
-@media screen and (max-width: 768px) {
-
-}
-
 
 
 @media screen and (max-width: 640px) {

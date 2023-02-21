@@ -160,7 +160,6 @@ to {opacity: 1}
 
 
 
-
 .best-offers {
     display: flex;
     flex-direction: column;
@@ -260,7 +259,6 @@ h2 {
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0px 0px 50px 0px;
 }
 
 .prod-discr {
@@ -525,7 +523,6 @@ input {
 }
 
 .feedback-client {
-    /* width: 900px; */
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
