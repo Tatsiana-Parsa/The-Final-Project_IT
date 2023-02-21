@@ -93,11 +93,6 @@
         top: 7px;
     }
 
-    .navigation a {
-        font-size: 23px;
-        padding: 10px;
-    }
-
     .navigation .menu-box li {  
         width: 100%;
         border-bottom: 1.5px solid rgba(51, 91, 107, 1);
@@ -114,11 +109,38 @@
         flex-direction: column;
         position: fixed;
         top: 15%;
-        left: 65%;
+        left: 75%;
         background-color: rgb(243, 243, 237, 0.9);
         width: 25%;
         visibility: hidden;
-        border-radius: 30px;
+        border-radius: 20px;
+    }
+
+    .navigation .menu-box li ul {  
+        width: 350px;
+        border-bottom: 1.5px solid rgba(51, 91, 107, 1);
+        text-align: center;
+    }
+
+    .nav_li ul {
+        display: inline-block;
+        flex-direction: column;
+        position: fixed;
+        top: 0%;
+        right: 100%;
+        background-color: rgb(243, 243, 237, 0.9);
+        width: 25%;
+        visibility: hidden;
+        border-radius: 20px;
+    }
+
+    .navigation li > ul a {
+
+        border-bottom: 0;
+    }
+
+    .navigation li:hover > ul {
+        white-space: normal;
     }
 
     .checkbox:checked ~ .toggle > span {
@@ -135,6 +157,10 @@
     }
 
     .checkbox:checked ~ .menu-box {
+        visibility: visible;
+    }
+
+    .checkbox:checked ~ .menu-box li ul {
         visibility: visible;
     }
 
@@ -188,9 +214,88 @@
 @media screen and (max-width: 950px) {
 
     .menu-box {
-        left: 70%;
+        left: 75%;
     }
 }
+
+
+@media screen and (max-width: 850px) {
+
+    .slideContainer {
+        width: 100%;
+        height: 300px;
+    }
+
+    .nav_li ul {
+        top: -70%;
+        right: 100%;
+    }
+
+    h2 {
+        font-size: 42px;
+        line-height: 65px;
+    }
+    .sale-offers {
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .fb-slideContainer {
+        width: 85%;
+        height: 300px;
+    }
+
+    .feedback {
+        padding: 70px 50px 70px 10px;
+    }
+
+    .client-pic {
+        float: left;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+    .about-us-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;     
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .contacts, .hours {
+        width: 300px;
+    }
+
+    .hours h4 {
+        padding-bottom: 20px;
+    } 
+    
+    .contacts h4 {
+        padding-bottom: 15px;
+    }
+
+
+    .prod-box h5 {
+        font-size: 32px;
+        line-height: 75px;
+    }
+
+    .price-list p {
+        width: 550px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
 
 
 @media screen and (max-width: 640px) {
