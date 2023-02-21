@@ -25,7 +25,7 @@ const prevSlide = () => {
     prepareCurrentSlide(index);
 }
 
-//setInterval(nextSlide, 10000);
+setInterval(nextSlide, 10000);
 
 
 
@@ -72,7 +72,7 @@ dots.forEach((item, index2Dot)=> {
     })
 })
 
-//setInterval(nextPage, 10000);
+setInterval(nextPage, 10000);
 
 
 

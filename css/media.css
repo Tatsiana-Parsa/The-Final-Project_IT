@@ -266,6 +266,10 @@
         gap: 20px;
     }
 
+    .about {
+        width: 500px;
+    }
+
     .contacts, .hours {
         width: 300px;
     }
@@ -292,23 +296,214 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
+   
+    h1 {
+        font-size: 40px;
+    }
 
+    h2 {
+        font-size: 36px;
+    }
+
+    .cert-card-box,
+    .certif-card,
+    .certif-card .back,
+    .g-cert {
+        width: 450px;
+        height: 250px;
+    }
+
+    .btn-cert {
+        padding: 0px 15px;
+    }
+
+    .p-cert {
+        padding: 15px 20px;
+    }
+
+    fieldset {
+        flex-direction: column;
+        width: 350px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .select-sum {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .field {
+        margin-bottom: 10px;
+    }
+
+    .box-feedback {
+        width: 650px;
+    }
+
+    .contacts, .hours {
+        width: 200px;
+    }
+
+
+    .prod-box h5 {
+        font-size: 23px;
+        line-height: 55px;
+    }
+
+    .price-list p {
+        width: 450px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .price-list sub {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .page-discr {
+        font-size: 18px;
+        line-height: 55px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .service-price {
+        width: 350px;
+        height: 250px;
+        padding: 40px 0 0 20px;
+    }
+
+    .serv-price-box {
+        font-size: 16px;
+        line-height: 55px;
+    }
+
+    .customer-feedback {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .feedback {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .client-pic {
+        margin-left: 10px;
+    }
+    
+    .box-feedback {
+        width: auto;
+    }
+
+    .box-feedback {
+        margin-left: 120px;
+        align-items: flex-start;
+    }
+
+    .dotsWrapper {
+        padding: 10px 160px;
+    }
 }
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 500px) {
 
+    h1 {
+        font-size: 32px;
+    }
+
+    .slideContainer {
+        width: 100%;
+        height: 200px;
+    }
+
+    .navigation a {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .navigation .menu-box li ul {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
     
-}
+    .offers {
+        width: 320px;
+        height: 400px;
+    }
+
+    .prod-box {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .prod-discr sub {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .prod-discr {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .hr-prod {
+        width: 280px;
+    }
+
+    .box-feedback {
+        margin-left: 75px;
+    }
+
+    .about {
+        width: 350px;
+    }
+
+    .contacts, .hours {
+        width: 150px;
+    }
+
+    h4 {
+        font-size: 18px;
+    } 
+
+    .contacts h4 {
+        padding-bottom: 0px;
+    }
 
 
 
-@media screen and (max-width: 425px) {
+    .prod-box h5 {
+        font-size: 18px;
+        line-height: 35px;
+    }
 
+    .price-list p {
+        width: 350px;
+        font-size: 13px;
+        line-height: 25px;
+    }
 
-    
+    .page-discr {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .price-list sub {
+        font-size: 14px;
+        line-height: 25px;
+    }
 }
 
 

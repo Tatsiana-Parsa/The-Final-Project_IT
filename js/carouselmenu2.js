@@ -23,7 +23,7 @@ const prevSlide = () => {
     prepareCurrentSlide(index);
 }
 
-//setInterval(nextSlide, 10000);
+setInterval(nextSlide, 10000);
 
 
 
