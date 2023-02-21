@@ -25,7 +25,7 @@ const prevSlide = () => {
     prepareCurrentSlide(index);
 }
 
-setInterval(nextSlide, 10000);
+//setInterval(nextSlide, 10000);
 
 
 
@@ -72,7 +72,7 @@ dots.forEach((item, index2Dot)=> {
     })
 })
 
-setInterval(nextPage, 10000);
+//setInterval(nextPage, 10000);
 
 
 
@@ -183,7 +183,7 @@ document.getElementById('f1').addEventListener('submit', validateForm);
 
 
 
-// Submit + Reset
+// Submit
 
 let button = document.getElementById("bt1"); 
   button.addEventListener('click', confirmSend);
@@ -198,51 +198,14 @@ let button = document.getElementById("bt1");
 
 
 
-let form = document.getElementById('f1');
-let inputSurname = document.getElementById('surname');
-let inputName = document.getElementById('myName');
-let inputDate = document.getElementById('date');
-let inputTel = document.getElementById('mobPhone');
-let inputMail = document.getElementById('letter');
-let select = document.getElementById('custCert');
+  let clientForm = {};
+  const form = document.getElementById('f1');
 
+  form.addEventListener('input', function(e){
+    clientForm[e.target.name] = e.target.value;
+    localStorage.setItem('clientForm', JSON.stringify(clientForm));
+  });
 
-if (localStorage.length != 0) {
-  inputSurname.value = localStorage.surname;
-  inputName.value = localStorage.myName;
-  inputDate.value = localStorage.date;
-  inputTel.value = localStorage.mobPhone;
-  inputMail.value = localStorage.letter;
-  select.value = localStorage.custCert;
-};
-
-let clientForm = {
-  surname: inputSurname.value,
-  name: inputName.value,
-  date: inputDate.value,
-  phone: inputTel.value,
-  email: inputMail.value,
-  summ: select.value
-};
-
-localStorage.setItem('clientForm', JSON.stringify(clientForm));
-
-form.addEventListener('submit', () => {
-  localStorage.surname = inputSurname.value;
-  localStorage.myName = inputName.value;
-  localStorage.date = inputDate.value;
-  localStorage.mobPhone = inputTel.value;
-  localStorage.letter = inputMail.value;
-  localStorage.custCert = select.value;
-});
-
-document.getElementById('f1').addEventListener('reset', () => {
-  inputSurname.value === '';
-  inputName.value === '';
-  inputDate.value === '';
-  inputTel.value === '';
-  inputMail.value === '';
-  select.value === '';
-});
-
-//console.log(clientForm);
+  if(localStorage.getItem('clientForm')) {
+    clientForm = JSON.parse(localStorage.getItem('clientForm'));
+  };

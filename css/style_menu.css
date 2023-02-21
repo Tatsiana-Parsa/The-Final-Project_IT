@@ -415,14 +415,14 @@ input {
 
 .cert-card-box {
     cursor: pointer;
-    height: 380px;
-    /* perspective: 600px; */
+    height: 310px;
     position: relative;
     width: 750px;
+    margin-bottom: 65px;
   }
 
   .certif-card {
-    height: 320px;
+    height: 310px;
     position: absolute;
     transform-style: preserve-3d;
     transition: all 0.7s ease-in-out;
@@ -449,7 +449,7 @@ input {
     text-align: center;
     transform: rotateY(180deg);
     width: 750px;
-    height: 320px;
+    height: 310px;
   }
 
   .p-cert {
@@ -605,7 +605,7 @@ span {
     align-content: center;
     align-items: center;
     justify-content: space-around;
-    padding: 30px 0px 50px 0px;
+    padding: 30px 0px 50px 50px;
     background-color: cornsilk;
     font-family: 'Open Sans';
     font-style: normal;

@@ -1,21 +1,74 @@
 @media screen and (max-width: 1440px) {
 
+    .serv-price-box {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 65px;
+    }
+
+    .offers {
+        width: 400px;
+        height: 500px;
+    }
+
+    .hr-prod {
+        width: 350px;
+    }
+
+    .prod-discr {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .cert-card-box,
+    .certif-card,
+    .certif-card .back,
+    .g-cert {
+        width: 600px;
+    }
+
+    .certific-bonus-box {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    .box-feedback {
+        width: 750px;
+    }
+
+    .feedback-client {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(82, 92, 96, 1);
+    }
+
+    .fb-slideContainer {
+        height: 350px;
+    }
 }
 
 
 
 @media screen and (max-width: 1280px) {
 
+    .serv-price-box {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 65px;
+    }
 }
-
-
-
-@media screen and (max-width: 1152px) {
-
-    
-}
-
-
 
 
 @media screen and (max-width: 1024px) {
